@@ -352,6 +352,7 @@ body {
     /* background-color: red; */
     overflow: scroll;
     /* background-color: aquamarine; */
+    overflow-x: hidden;
 }
 
 .items>p:hover {
@@ -372,9 +373,9 @@ body {
     color: var(--primary-selected-text-color);
 }
 
-.items::-webkit-scrollbar {
+/* .items::-webkit-scrollbar {
     display: none;
-}
+} */
 
 .items {
     -ms-overflow-style: none;
@@ -404,7 +405,7 @@ body {
     padding: 16px;
     overflow: hidden;
     cursor: pointer;
-} 
+}
 
 .carousel div h1 {
     color: white;

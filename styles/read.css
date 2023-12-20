@@ -304,16 +304,14 @@ body {
 .pages img:last-child{
     margin-bottom: 80px;
 }
-.body::-webkit-scrollbar {
+/* .body::-webkit-scrollbar {
     display: none;
-}
+} */
 
-.body {
+/* .body {
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
-}
+} */
 
 .fab {
     position: absolute;
