@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0">
+    <script src="/scripts/bundle-read.js" defer></script>
+    <script src="./scripts/jquery-3.7.1.js"></script>
+    <!-- <script src="./scripts/read.js" defer></script> -->
+    <link rel="stylesheet" href="./styles/read.css">
+</head>
+
+<body>
+    <div class="chapter search-hide">
+        <div class="dialog">
+            <div class="heading">
+                <span class="icon material-symbols-outlined">book_5</span>
+                <span>Select Chapter</span>
+                <md-outlined-text-field label="Chapter Number" value="">
+            </div>
+            <div class="content">
+                <ul class="chapters-list">
+                </ul>
+            </div>
+            <div class="actions">
+                <div class="action cancel">Cancel</div>
+                <div class="action go">Go</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="group">
+                <span class="menu material-symbols-outlined">manga</span>
+            </div>
+            <a href="./index.html">
+                <div class="group">
+                    <span class="menu home material-symbols-outlined">home</span>
+                    <p>Home</p>
+                </div>
+            </a>
+            <a href="./explore.html">
+                <div class="group">
+                    <span class="menu explore material-symbols-rounded selected-menu-item">explore</span>
+                    <span>Explore</span>
+                </div>
+            </a>
+            <div class="group">
+                <span class="menu contact material-symbols-outlined">handshake</span>
+                <span>Contact</span>
+            </div>
+            <div class="group">
+                <span class="menu mode material-symbols-outlined">light_mode</span>
+                <span>Mode</span>
+            </div>
+        </div>
+        <div class="body">
+
+            <!-- <div class="header">
+                <span>Chapter</span>
+            </div> -->
+            <div class="pages">
+                <!-- <img class="mainpage" src="./images/Chapter1_1.jpg">
+                <img class="mainpage" src="./images/Chapter1_1.jpg"> -->
+            </div>
+            <div class="fab">
+                <md-elevation></md-elevation>
+                <div class="dual-page hidden">
+                    <span class="icon material-symbols-outlined">splitscreen_vertical_add</span>
+                </div>
+                <div class="next-chap hidden">
+                    <span class="icon material-symbols-outlined">keyboard_tab</span>
+                </div>
+                <div class="back-to-menu hidden">
+                    <span class="icon material-symbols-outlined">list</span>
+                </div>
+                <div class="main">
+                    <span class="icon material-symbols-outlined">book_5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0">
+    <script src="./scripts/jquery-3.7.1.js"></script>
+    <script src="/scripts/bundle-explore.js" defer></script>
+    <!-- <script src="./scripts/explore.js" defer></script> -->
+
+    <link rel="stylesheet" href="./styles/explore_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="group">
+                <span class="menu material-symbols-outlined">manga</span>
+            </div>
+            <a href="./index.html">
+                <div class="group">
+                    <span class="menu home material-symbols-outlined">home</span>
+                    <p>Home</p>
+                </div>
+            </a>
+            <div class="group">
+                <span class="menu explore material-symbols-rounded selected-menu-item">explore</span>
+                <span>Explore</span>
+            </div>
+            <div class="group">
+                <span class="menu contact material-symbols-outlined">handshake</span>
+                <span>Contact</span>
+            </div>
+            <div class="group">
+                <span class="menu mode material-symbols-outlined">light_mode</span>
+                <span>Mode</span>
+            </div>
+        </div>
+        <div class="body">
+            <div class="top">
+                <div class="left">
+                    <md-elevation></md-elevation>
+                </div>
+                <div class="right">
+                    <h1>One Piece</h1>
+                    <br>
+                    <div class="tags">
+                        <span>comedy</span>
+                        <span>adventure</span>
+                    </div>
+                    <br>
+                    <p>One Piece (stylized in all caps) is a Japanese manga series written and illustrated by Eiichiro
+                        Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July
+                        1997, with its individual chapters compiled into 107 tankōbon volumes as of November 2023. The
+                        story follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates, where he
+                        explores the Grand Line in search of the mythical treasure known as the "One Piece" in order to
+                        become the next King of the Pirates.</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="current">
+                    <div class="header">
+                        <span>Continue where you left off?</span>
+                    </div>
+                    <div class="img-container previous"><md-elevation></md-elevation>
+                        <div class="inset-image"></div>
+                        <div class="text-container">
+                            <p class="heading">Chapter 1</p>
+                            <div class="button"><md-filled-button>Continue</md-filled-button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="header">
+                        <span>Jump to your favorite</span>
+                    </div>
+                    <div class="search-box"><md-elevation></md-elevation>
+                        <md-outlined-text-field label="Chapter Number" type="number" class="searchbar">
+                        </md-outlined-text-field>
+
+                        <!-- <input type=" number" class="searchbar" placeholder="Enter Chapter Number"> -->
+                        <div class="items">
+                        </div>
+                    </div>
+                </div>
+                <div class="new">
+                    <div class="header">
+                        <span>Newly Released Chapters</span>
+                    </div>
+                    <div class="carousel">
+                        <div class="image1 active"><md-elevation></md-elevation>
+                        </div>
+                        <div class="image2 inactive"><md-elevation></md-elevation></div>
+                        <div class="image3 inactive"><md-elevation></md-elevation></div>
+                        <div class="image4 inactive"><md-elevation></md-elevation></div>
+                        <!-- <div class="img1 active"><md-elevation></md-elevation>
+                            <div class="inset-image-new latest"></div>
+                        </div>
+                        <div class="img2 inactive"><md-elevation></md-elevation>
+                            <div class="inset-image-new latest"></div>
+                        </div>
+                        <div class="img3 inactive"><md-elevation></md-elevation>
+                            <div class="inset-image-new latest"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
