@@ -4596,7 +4596,7 @@ menu.addEventListener('click', () => {
 
 
 const carousel = document.querySelectorAll('.carousel>div');
-console.log(carousel);
+// console.log(carousel);
 
 
 carousel.forEach((item) => {
@@ -4614,22 +4614,22 @@ carousel.forEach((item) => {
 
 const itemsContainer = document.querySelector('.items');
 
-const items = document.querySelectorAll('.items > p');
-const searchBar = document.querySelector('.searchbar');
+// const items = document.querySelectorAll('.items > p');
+// const searchBar = document.querySelector('.searchbar');
 
-searchBar.addEventListener('input', () => {
-    const value = searchBar.value;
-    const re = `^${value}\\d*`;
-    items.forEach((item) => {
-        if (item.getAttribute('data-value').match(re) == item.getAttribute('data-value')) {
-            item.classList.remove('hidden');
-        }
-        else {
-            item.classList.add('hidden');
-            console.log('no');
-        }
-    });
-});
+// searchBar.addEventListener('input', () => {
+//     const value = searchBar.value;
+//     const re = `^${value}\\d*`;
+//     items.forEach((item) => {
+//         if (item.getAttribute('data-value').match(re) == item.getAttribute('data-value')) {
+//             item.classList.remove('hidden');
+//         }
+//         else {
+//             item.classList.add('hidden');
+//             console.log('no');
+//         }
+//     });
+// });
 function drawChapters(number) {
     for (let i = number; i >= 1; i--) {
         const p = document.createElement('p');
@@ -4677,7 +4677,7 @@ $(document).ready(
         button.addEventListener('click', goToChapter(button));
         document.querySelector('.heading').textContent = `Chapter ${lastChapter}`;
         const chaptersLength = await getTotalChapters();
-        console.log(chaptersLength);
+        // console.log(chaptersLength);
         // const number = await getTotalPages('./chapters/')
         drawChapters(chaptersLength);
         const chapters = await getChapters();
@@ -4706,7 +4706,7 @@ $(document).ready(
                 }
                 else {
                     item.classList.add('hidden');
-                    console.log('no');
+                    // console.log('no');
                 }
             });
         });

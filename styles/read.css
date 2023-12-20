@@ -301,7 +301,9 @@ body {
     border-radius: 8px;
     --md-elevation-level: 1;
 }
-
+.pages img:last-child{
+    margin-bottom: 80px;
+}
 .body::-webkit-scrollbar {
     display: none;
 }
