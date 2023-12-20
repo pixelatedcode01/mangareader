@@ -4671,6 +4671,8 @@ function getTotalChapters(){
 
 $(document).ready(
     async function getNumberOfChapters() {
+        const lastChapter = localStorage.getItem('chapter');
+        document.querySelector('.heading').textContent = `Chapter ${lastChapter}`;
         const chaptersLength = await getTotalChapters();
         console.log(chaptersLength);
         // const number = await getTotalPages('./chapters/')
