@@ -4459,11 +4459,14 @@ MdRadio.styles = [styles];
 MdRadio = __decorate([
     t$3('md-radio')
 ], MdRadio);
-
+const root = document.documentElement;
+const theme = localStorage.getItem('mode');
+root.className = theme;
 function setTheme() {
-    const root = document.documentElement;
     const newTheme = root.className === 'dark' ? 'light' : 'dark';
     root.className = newTheme;
+    localStorage.setItem('mode', newTheme)
+
 }
 
 document.querySelector('.mode').addEventListener('click', setTheme);

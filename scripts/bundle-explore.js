@@ -4563,11 +4563,14 @@ function goToChapter(chapter) {
         window.location.href = 'read.html?chapter=' + encodeURIComponent(value);
     });
 }
-
+const root = document.documentElement;
+const theme = localStorage.getItem('mode');
+root.className = theme;
 function setTheme() {
-    const root = document.documentElement;
+
     const newTheme = root.className === 'dark' ? 'light' : 'dark';
     root.className = newTheme;
+    localStorage.setItem('mode', newTheme)
 }
 
 
