@@ -1,21 +1,16 @@
-const cheerio = require('cheerio');
 const axios = require('axios')
-const fs = require('fs')
-const url = 'https://mangaclash.com/manga/one-piece/chapter-1/'
-let pagesList = []
-async function load() {
-    try {
-        const response = await axios.get(url)
-        const $ = cheerio.load(response.data)
-        const pages = $('.page-break img')
-        pages.each(function () {
-            console.log($(this).attr('data-src'))
-        })
 
+const id = 'a1c7c817-4e59-43b7-9365-09675a149a6f'
+const url = `https://api.mangadex.org/manga/${id}/aggregate`;
+
+async function fetch() {
+    let latest;
+    const data = await axios.get(url)
+    const chapters = data.data['volumes']['none']['chapters']
+    for (const key in chapters) {
+        latest = key
     }
-    catch (error) {
-        console.log(error)
-    }
+    console.log(latest)
 }
 
-load()
+fetch()
